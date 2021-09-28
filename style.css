@@ -41,6 +41,9 @@ body{
     background-attachment: fixed;
    
 }
+.content{
+    width: 100%;
+}
 
 .block
 {
@@ -113,7 +116,10 @@ ul{
 .ss ol{
     display:inline-table;
 }
+
 .menu{
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -142,9 +148,10 @@ ul{
   }
 
 .menu li {
+    margin-top: 10px; 
     width: 100%;
+    flex-direction: column;
   }
-
 
 #footer {
     box-shadow: 0 0 50px;
@@ -159,7 +166,12 @@ ul{
     color: rgba(71, 26, 107, 0.63); /* Цвет текста */
 }
 
-@media screen and (min-width: 426px) {
+@media screen and (min-device-width: 426px) {
+    .menu{
+        width: 960px;
+        margin: 0 auto;
+        flex-direction: row;
+    }
     .block_ss{
         width: 960px;
         margin: 0 auto;
@@ -173,17 +185,9 @@ ul{
     .wrapper{
         width: 960px;
     }
-    .menu{
-        width: 960px;
-        margin: 0 auto;
-        flex-direction: row;
-    }
+   
     .menu li{
         margin: 10px;
-    }
-    .ss{
-        width: 960px;
-        margin: 0 auto;
-        margin-bottom: 50px;
+        
     }
   }
