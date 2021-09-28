@@ -21,7 +21,7 @@ header {
     font-family: 'Lato', sans-serif;
     color:#D1F0C6;
     margin-left: 50px;
-    font-size: 150%;
+    font-size: x-large;
     padding-top: 50px;
     font-size: 5ch;
 }
@@ -31,6 +31,7 @@ header {
     background: url(logo.gif);
     float:  left;
     padding-right: 20px;
+    margin: 15px;
 }
 
 body{
@@ -39,7 +40,6 @@ body{
     flex-direction: column;
     display: flex;
     background-attachment: fixed;
-   
 }
 .content{
     width: 100%;
@@ -54,8 +54,7 @@ body{
     margin-bottom: 50px;
     background-color: rgb(133, 197, 235);
     border: 5px dashed rgb(189, 111, 189);
-    text-align: center;
-    
+    padding-left:20px ;
 }
 .top_bot{
     padding-top: 50px;
@@ -70,8 +69,7 @@ body{
     margin-bottom: 50px;
     background-color: rgb(133, 197, 235);
     border: 5px dashed rgb(189, 111, 189);
-    text-align: center;
-    
+    padding-left:25px ;
 }
 
 h1{
@@ -117,6 +115,7 @@ ul{
     display:inline-table;
 }
 
+
 .menu{
     padding-top: 50px;
     padding-bottom: 50px;
@@ -128,7 +127,8 @@ ul{
 }
 .menu ul {
     background:#d078e686; /*добавляем фон всему меню (заменив этот параметр, вы поменяете цвет всего меню)*/
-    height: 100px; /*задаем высоту*/
+    height: 500px; /*задаем высоту*/
+    width: 200px;
   }
 .menu a {
     text-align: center;
@@ -137,10 +137,13 @@ ul{
     color:#fff; /*меняем цвет ссылок*/
     margin-left: 15px;
     margin-right: 15px;
+    font-size: 200%;
     font-family: arial; /*меняем шрифт*/
     line-height:50px; /*ровняем меню по вертикали*/
     display: block; 
     border: 1px solid #62caf398; /*добавляем бордюр*/
+    height:80px;
+    padding-top: 25px;
   }
 
 .menu a:hover {
@@ -148,7 +151,7 @@ ul{
   }
 
 .menu li {
-    margin-top: 10px; 
+    margin-top: 20px;
     width: 100%;
     flex-direction: column;
   }
@@ -167,6 +170,7 @@ ul{
 }
 
 @media screen and (min-device-width: 426px) {
+    
     .menu{
         width: 960px;
         margin: 0 auto;
